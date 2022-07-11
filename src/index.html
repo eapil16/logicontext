@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no, maximum-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link rel="stylesheet" href="assets/css/jquery.fancybox.css">
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <title>logicloud</title>
   </head>
@@ -21,10 +23,10 @@
       <main class="main-section">
         <div class="container">
           <div class="banner"> 
-            <div class="banner-text"> 
+            <div class="banner-text wow animate__fadeIn animated" data-wow-duration="1.2s" animation-timing-function="ease-in">
               <h1>Ручная настройка контекстной рекламы</h1>
               <p>Настраиваем вдумчиво, ведём внимательно, консультируем понятно.</p>
-              <div class="banner-text__buttons"> <a class="btn button button-blue" href="#">Рассчитать стоимость</a><a class="link" href="#">
+              <div class="banner-text__buttons"> <a class="btn button button-blue" href="#" data-bs-toggle="modal" data-bs-target="#modalForm">Рассчитать стоимость</a><a class="link" href="#">
                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22">
 <path id="telegram" d="M11,8A11,11,0,1,0,22,19,11,11,0,0,0,11,8Zm5.4,7.536-1.8,8.507c-.133.6-.492.75-.994.466l-2.75-2.027L9.527,23.759a.694.694,0,0,1-.554.271l.2-2.8,5.1-4.6c.222-.2-.049-.306-.342-.111l-6.3,3.965-2.721-.85c-.59-.186-.6-.59.124-.874l10.605-4.09c.493-.176.923.121.761.866Z" transform="translate(0 -8)" fill="#31a9df"/>
 </svg></a><a class="link" href="#">
@@ -35,13 +37,13 @@
                 <p>Ведение рекламных кампаний первые 2 недели в подарок!</p>
               </div>
             </div>
-            <div class="banner-image"> <img src="assets/images/phone.png" alt="">
-              <div class="banner-image__applications">
+            <div class="banner-image"> <img class="banner-text__image wow animate__fadeInUpMini animated" data-wow-duration="1s" animation-timing-function="ease-in" src="assets/images/phone.jpg" alt="">
+              <div class="banner-image__applications parallax-one wow animate__fadeInUpMini animated" data-wow-duration="1.5s" animation-timing-function="ease-in">
                 <div class="banner-image__applications_text">
                   <p>Заявки</p><strong>+14,25%</strong>
                 </div><img src="assets/images/diagram.png" alt="">
               </div>
-              <div class="banner-image__visitors">
+              <div class="banner-image__visitors parallax-two wow animate__fadeInUpMini animated" data-wow-duration="2s" animation-timing-function="ease-in">
                 <div class="banner-image__visitors_text"> 
                   <p>Посетители</p><strong>+ 67%</strong>
                 </div>
@@ -49,7 +51,7 @@
               </div>
             </div>
           </div>
-          <div class="clients">
+          <div class="clients wow animate__fadeInUp animated" data-wow-duration="1s" animation-timing-function="ease-in">
             <p>Счастливые клиенты, которые доверили нам свой бизнес</p>
             <div class="clients-block"> 
               <div class="clients-block__item"> <a href="#"><img src="assets/images/client-1.png" alt=""></a></div>
@@ -61,7 +63,7 @@
             </div>
           </div>
         </div>
-        <div class="work"> 
+        <div class="work wow animate__fadeInUp animated" data-wow-duration="1s" animation-timing-function="ease-in"> 
           <div class="container">
             <div class="work-block"> 
               <div class="work-block__image"> 
@@ -96,7 +98,7 @@
           </div>
         </div>
         <div class="container">
-          <div class="text-block"> 
+          <div class="text-block wow animate__fadeInUp animated" data-wow-duration="1s" animation-timing-function="ease-in"> 
             <div class="row"> 
               <div class="col-md-6 col-12">
                 <h2>Почему Яндекс.Директ?</h2>
@@ -111,7 +113,7 @@
               </div>
             </div>
           </div>
-          <div class="text-block"> 
+          <div class="text-block wow animate__fadeInUp animated" data-wow-duration="1s" animation-timing-function="ease-in"> 
             <div class="row"> 
               <div class="col-md-6 col-12">
                 <h2>Что вы можете получить</h2>
@@ -130,7 +132,7 @@
             </div>
           </div>
         </div>
-        <div class="work-odds"> 
+        <div class="work-odds wow animate__fadeInUp animated" data-wow-duration="1s" animation-timing-function="ease-in"> 
           <div class="container">
             <h2>Мы работаем максимально прозрачно</h2>
             <div class="row"> 
@@ -153,7 +155,7 @@
           </div>
         </div>
         <div class="container">
-          <div class="portfolio">
+          <div class="portfolio wow animate__fadeInUp animated" data-wow-duration="1s" animation-timing-function="ease-in">
             <h2>Примеры наших работ</h2>
             <div class="row"> 
               <div class="col-lg-4 col-md-5 col-12">
@@ -173,12 +175,24 @@
                   <p>CTR: <strong>9.27</strong></p>
                 </div>
               </div>
-              <div class="col-lg-8 col-md-7 col-12"><img src="assets/images/port.png" alt=""></div>
+              <div class="col-lg-8 col-md-7 col-12">
+                <div class="portfolio-slider swiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="assets/images/port.png" alt=""></div>
+                    <div class="swiper-slide"><img src="assets/images/port-2.png" alt=""></div>
+                    <div class="swiper-slide"><img src="assets/images/port.png" alt=""></div>
+                  </div>
+                  <div class="swiper-buttons"> 
+                    <div class="swiper-prev portfolio-prev"></div>
+                    <div class="swiper-next portfolio-next"></div>
+                  </div>
+                </div>
+              </div>
             </div>
             <div class="portfolio-buttons"><a class="btn button button-white" href="#">Больше работ</a></div>
           </div>
         </div>
-        <div class="tariffs">
+        <div class="tariffs wow animate__fadeInUp animated" data-wow-duration="1s" animation-timing-function="ease-in">
           <div class="container">
             <h2>Тарифы</h2>
             <p>Мы из Твери, а это значит, что вы получите качественную работу по цене ниже, чем в крупных городах</p>
@@ -246,7 +260,7 @@
             </div>
           </div>
         </div>
-        <div class="block-form">
+        <div class="block-form wow animate__fadeInUp animated" data-wow-duration="1s" animation-timing-function="ease-in">
           <div class="container">
             <div class="row"> 
               <div class="col-md-6 col-12">
@@ -279,7 +293,7 @@
           </div>
         </div>
         <div class="container">
-          <div class="odds-block"> 
+          <div class="odds-block wow animate__fadeInUp animated" data-wow-duration="1s" animation-timing-function="ease-in"> 
             <div class="row"> 
               <div class="col-lg-6 col-12">
                 <h2>Почему нам доверяют?</h2>
@@ -301,28 +315,52 @@
               </div>
             </div>
           </div>
-          <div class="reviews"> 
+          <div class="reviews wow animate__fadeInUp animated" data-wow-duration="1s" animation-timing-function="ease-in"> 
             <div class="row"> 
               <div class="col-lg-4 col-12">
                 <h2>Отзывы:</h2>
               </div>
               <div class="col-lg-8 col-12">
-                <div class="reviews-block">
-                  <p>«Компания "Альготек" благодарит компанию "Лоджиклауд" за првоедение эффективной рекламной кампании в сети Интернет. За год сотрудничества компании "Лоджиклауд" удалось увеличить поток входящих заявок к сайта на 15%. Компания зарекомендовала себя как надежный партнер, который умеет оперативно и качественно выполнять поставленные задачи. Также стоит отметить высокий уровень клиентоориентированности компании. Желаем вам и дальше столь же успешно достигать поставленных целей!»</p>
-                  <div class="reviews-block__info"> 
-                    <div class="reviews-block__info_text"> 
-                      <p>Карелин Н. В.</p>
-                      <p>Генеральный директор ООО "Альготек"</p>
+                <div class="reviews-slider swiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <div class="reviews-block">
+                        <p>«Компания "Альготек" благодарит компанию "Лоджиклауд" за првоедение эффективной рекламной кампании в сети Интернет. За год сотрудничества компании "Лоджиклауд" удалось увеличить поток входящих заявок к сайта на 15%. Компания зарекомендовала себя как надежный партнер, который умеет оперативно и качественно выполнять поставленные задачи. Также стоит отметить высокий уровень клиентоориентированности компании. Желаем вам и дальше столь же успешно достигать поставленных целей!»</p>
+                        <div class="reviews-block__info"> 
+                          <div class="reviews-block__info_text"> 
+                            <p>Карелин Н. В.</p>
+                            <p>Генеральный директор ООО "Альготек"</p>
+                          </div>
+                          <div class="reviews-block__info_button"> <a class="link" href="assets/images/sert-1.png" data-fancybox="" data-caption="Название">Оригинал письма</a></div>
+                        </div>
+                      </div>
                     </div>
-                    <div class="reviews-block__info_button"> <a class="link" href="assets/images/sert-1.png" data-fancybox="" data-caption="Название">Оригинал письма</a></div>
+                    <div class="swiper-slide">
+                      <div class="reviews-block">
+                        <p>«Компания "Альготек" благодарит компанию "Лоджиклауд" за првоедение эффективной рекламной кампании в сети Интернет. </p>
+                        <div class="reviews-block__info"> 
+                          <div class="reviews-block__info_text"> 
+                            <p>Карелин Н. В.</p>
+                            <p>Генеральный директор ООО "Альготек"</p>
+                          </div>
+                          <div class="reviews-block__info_button"> <a class="link" href="assets/images/sert-1.png" data-fancybox="" data-caption="Название">Оригинал письма</a></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-buttons"> 
+                    <div class="swiper-prev reviews-prev"></div>
+                    <div class="swiper-next reviews-next"></div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="conduct"> 
+          <div class="conduct wow animate__fadeInUp animated" data-wow-duration="1s" animation-timing-function="ease-in"> 
             <div class="row"> 
-              <div class="col-lg-6 col-12"><img src="assets/images/conduct.png" alt=""></div>
+              <div class="col-lg-6 col-12">
+                <div class="conduct-image"><img src="assets/images/conduct.png" alt=""><img class="conduct-image__small wow animate__zoomIn" data-wow-duration="1s" animation-timing-function="ease-in" src="assets/images/conduct-1.png" alt=""><img class="conduct-image__middle wow animate__zoomIn" data-wow-duration="1s" animation-timing-function="ease-in" src="assets/images/conduct-2.png" alt=""></div>
+              </div>
               <div class="col-lg-6 col-12">
                 <h2>У меня настроена реклама, мне нужно только ведение.</h2>
                 <p>Мы можем заняться ведением вашей рекламы. Для начала мы проведем аудит вашей рекламы и сайта и подробно разберем все точки роста. Исправим всё, что следует исправить и постараемся повысить эффективность рекламы.</p>
@@ -330,11 +368,11 @@
                   <li>Получить больше клиентов</li>
                   <li>Удержать старых клиентов</li>
                   <li>Раскрутить бренд</li>
-                </ul><a class="btn button button-white" href="#">Подробнее</a>
+                </ul><a class="btn button button-white" href="#" data-bs-toggle="modal" data-bs-target="#modalText">Подробнее</a>
               </div>
             </div>
           </div>
-          <div class="info-block"> 
+          <div class="info-block wow animate__fadeInUp animated" data-wow-duration="1s" animation-timing-function="ease-in"> 
             <div class="row"> 
               <div class="col-md-6 col-12">
                 <div class="info-block__text">
@@ -390,7 +428,7 @@
               </div>
             </div>
           </div>
-          <div class="work-stages">
+          <div class="work-stages wow animate__fadeInUp animated" data-wow-duration="1s" animation-timing-function="ease-in">
             <div class="row"> 
               <div class="col-md-6 col-12">
                 <div class="work-stages__text"> 
@@ -417,7 +455,7 @@
             </div>
           </div>
         </div>
-        <div class="company"> 
+        <div class="company wow animate__fadeInUp animated" data-wow-duration="1s" animation-timing-function="ease-in"> 
           <div class="container">
             <div class="company-text"> 
               <div class="row"> 
@@ -447,11 +485,11 @@
           </div>
         </div>
       </main>
-      <footer class="footer">
+      <footer class="footer wow animate__fadeInUp animated" data-wow-duration="1s" animation-timing-function="ease-in">
         <div class="container"> 
           <div class="footer-block"> 
             <div class="footer-block__content"> <img class="image" src="assets/images/logo-mini.svg" alt="">
-              <p>Узнайте стоимость <strong>настройки рекламной кампании</strong></p><a class="btn buton button-blue" href="#">Оставить заявку</a>
+              <p>Узнайте стоимость <strong>настройки рекламной кампании</strong></p><a class="btn buton button-blue" href="#" data-bs-toggle="modal" data-bs-target="#modalForm">Оставить заявку</a>
             </div>
             <div class="footer-block__contacts"> 
               <div class="footer-block__contacts_address"> 
@@ -463,9 +501,81 @@
           </div>
         </div>
       </footer>
+      <div class="modal fade" id="modalForm" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Закрыть"><span aria-hidden="true"> <img src="assets/images/close.svg" alt=""></span></button>
+            <div class="modal-body">
+              <h5>Оставьте заявку</h5>
+              <p>Это очень просто! Заполните поля ниже<br/> и мы свяжемся с вами.</p>
+              <div class="block-form__form">
+                <div class="form-group"> 
+                  <label>Адрес сайта</label>
+                  <input class="form-control" type="text" placeholder="Укажите адрес">
+                </div>
+                <div class="form-group"> 
+                  <label>Телефон или email</label>
+                  <input class="form-control" type="text" placeholder="Контакты для связи с вами">
+                </div>
+                <div class="form-group"> 
+                  <button class="btn button button-blue" type="submit">Отправить</button>
+                </div>
+                <div class="form-group"> 
+                  <p>Или</p><a class="btn button button-white" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22">
+<path id="telegram" d="M11,8A11,11,0,1,0,22,19,11,11,0,0,0,11,8Zm5.4,7.536-1.8,8.507c-.133.6-.492.75-.994.466l-2.75-2.027L9.527,23.759a.694.694,0,0,1-.554.271l.2-2.8,5.1-4.6c.222-.2-.049-.306-.342-.111l-6.3,3.965-2.721-.85c-.59-.186-.6-.59.124-.874l10.605-4.09c.493-.176.923.121.761.866Z" transform="translate(0 -8)" fill="#31a9df"></path>
+</svg><span>Написать в Telegram</span></a><a class="btn button button-white" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22">
+<path id="whatsapp-square" d="M11,36.459a6.472,6.472,0,0,0-5.485,9.915l.152.246-.653,2.387,2.45-.643L7.7,48.5a6.455,6.455,0,0,0,3.3.9h0a6.471,6.471,0,1,0,0-12.941Zm3.806,9.252a1.985,1.985,0,0,1-1.311.923,3.8,3.8,0,0,1-2.333-.486,8.742,8.742,0,0,1-3.325-2.937,3.77,3.77,0,0,1-.8-2.013,2.179,2.179,0,0,1,.683-1.625.709.709,0,0,1,.521-.246h.373c.113,0,.28-.044.437.334s.55,1.346.6,1.444a.344.344,0,0,1,.015.339c-.373.746-.771.717-.57,1.061a5.3,5.3,0,0,0,2.647,2.313c.2.1.309.083.422-.049s.486-.57.614-.761.26-.162.437-.1,1.134.535,1.331.633.324.147.373.226a1.728,1.728,0,0,1-.114.944ZM19.643,32H2.357A2.358,2.358,0,0,0,0,34.357V51.643A2.358,2.358,0,0,0,2.357,54H19.643A2.358,2.358,0,0,0,22,51.643V34.357A2.358,2.358,0,0,0,19.643,32ZM11,50.72a7.78,7.78,0,0,1-3.722-.948l-4.13,1.085,1.1-4.037A7.834,7.834,0,1,1,11,50.72Z" transform="translate(0 -32)" fill="#18b00f"></path>
+</svg><span>Написать в WhatsApp</span></a>
+                  <p class="politics"> <a href="#">Политика конфиденциальности </a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="modalText" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Закрыть"><span aria-hidden="true"> <img src="assets/images/close.svg" alt=""></span></button>
+            <div class="modal-body">
+              <div class="modal-body__text">
+                <h5>Если у вас уже есть рекламная компания, вы получите:</h5>
+                <p class="info">Ведение рекламы от 13 000 руб.</p>
+                <ul> 
+                  <li>Полная настройка аналитики: Яндекс Метрики, настройка целей (При необходимости)</li>
+                  <li>Остановка или доработка неэффективных объявлений</li>
+                  <li>Оптимизация и А/В тесты объявлений (заголовков, текстов, картинок и т.д.)</li>
+                  <li>Настройка ретаргетинга — возврат посетителей, которые ушли с Вашего сайта</li>
+                  <li>Расширение списка ключевых фраз для увеличения охвата аудитории</li>
+                  <li>Внесение корректировок по полу, возрасту, типу устройства</li>
+                  <li>Суточная и недельная корректировка ставо</li>
+                  <li>Контроль рекламного бюджета</li>
+                </ul>
+                <h6>Анализ ключевых слов и площадок:</h6>
+                <ul> 
+                  <li>Полная настройка аналитики: Яндекс Метрики, настройка целей (При необходимости)</li>
+                  <li>Остановка или доработка неэффективных объявлений</li>
+                  <li>Оптимизация и А/В тесты объявлений (заголовков, текстов, картинок и т.д.)</li>
+                  <li>Настройка ретаргетинга — возврат посетителей, которые ушли с Вашего сайта</li>
+                </ul>
+                <h6> Анализ объявлений:</h6>
+                <ul>
+                  <li>Расширение списка ключевых фраз для увеличения охвата аудитории</li>
+                  <li>Внесение корректировок по полу, возрасту, типу устройства</li>
+                  <li>Суточная и недельная корректировка ставо</li>
+                  <li>Контроль рекламного бюджета</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
       <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
       <script src="assets/js/jquery.fancybox.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/TweenMax.min.js"></script>
+      <script src="assets/js/wow.js"></script>
+      <script src="assets/js/swiper-bundle.min.js"> </script>
       <script src="assets/js/script.js"></script>
     </div>
   </body>

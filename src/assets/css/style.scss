@@ -118,6 +118,7 @@ body {
 
 main {
   flex: 1 1 auto;
+  padding: 100px 0 0 0;
 }
 
 a {
@@ -161,7 +162,13 @@ a {
 }
 
 .header {
-  padding: 30px 0;
+  padding: 30px 0 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #fff;
+  z-index: 10;
   &-block {
     display: flex;
     align-items: center;
@@ -217,7 +224,8 @@ a {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 30px 0 120px;
+  margin: 30px 0;
+  min-height: calc(100vh - 200px);
   &-text {
     flex:1;
     p {
@@ -444,7 +452,7 @@ h1 {
   padding: 120px 20px;
   background: #F4F8FA;
   border-radius: 40px;
-  max-width: 1300px;
+  max-width: calc(100% - 100px);
   margin: 0 auto;
   position: relative;
   &-block {
@@ -584,10 +592,6 @@ h2 {
 
 .text-block  {
   margin: 120px 0;
-  h2 {
-    position: sticky;
-    top: 20px;
-  }
 }
 
 ul.text-list {
@@ -620,7 +624,7 @@ ul.text-list {
   padding: 120px 20px;
   background: #F4F8FA;
   border-radius: 40px;
-  max-width: 1300px;
+  max-width: calc(100% - 100px);
   margin: 0 auto;
   position: relative;
   &__item {
@@ -708,7 +712,7 @@ ul.text-list {
   padding: 120px 20px;
   background: #F4F8FA;
   border-radius: 40px;
-  max-width: 1300px;
+  max-width: calc(100% - 100px);
   margin: 0 auto;
   position: relative;
   h2 {
@@ -983,6 +987,19 @@ ul.text-list {
 
 .conduct {
   margin: 120px 0;
+  &-image {
+    position: relative;
+    &__small {
+      position: absolute;
+      top: 140px;
+      left: 0;
+    }
+    &__middle {
+      position: absolute;
+      bottom: 100px;
+      right: 0;
+    }
+  }
   img {
     max-width: 100%;
     width: auto;
@@ -1089,7 +1106,7 @@ ul.text-list {
   &__text {
     margin: 0 30px 0 0;
     position: sticky;
-    top: 30px;
+    top: 250px;
   }
 }
 
@@ -1100,6 +1117,7 @@ h3 {
   color:#2D2D2D;
   font-family: 'AvertaCY-Black';
 }
+
 
 .work-stages {
   margin: 120px 0;
@@ -1122,7 +1140,7 @@ h3 {
   &__text {
     margin: 0 0 30px 0;
     position: sticky;
-    top: 30px;
+    top: 250px;
     max-width: 400px;
     .button {
       margin-top: 50px;
@@ -1178,7 +1196,7 @@ h3 {
   padding: 120px 20px;
   background: #F4F8FA;
   border-radius: 40px;
-  max-width: 1300px;
+  max-width: calc(100% - 100px);
   margin: 0 auto;
   position: relative;
   &-text {
@@ -1237,7 +1255,7 @@ h3 {
 .footer {
   padding: 50px 0 0;
   border-top: 1px solid #DFDFDF;
-  max-width: 1300px;
+  max-width: calc(100% - 100px);
   position: relative;
   width: 100%;
   margin:120px auto 100px;
@@ -1306,6 +1324,129 @@ h3 {
   margin: 0 20px 0 0;
 }
 
+.btn-close {
+  box-sizing: content-box;
+  width: 26px;
+  height: 26px;
+  color: #000;
+  background: transparent;
+  border: 0;
+  border-radius: 50%;
+  opacity: .5;
+  position: absolute;
+  right: -40px;
+  padding: 0;
+  transition: all 400ms ease-in-out;
+  &:hover {
+    opacity: 1;
+    transition: all 400ms ease-in-out;
+  }
+}
+.modal-content {
+  border-radius: 12px;
+}
+.modal-body {
+  padding: 60px;
+  h5 {
+    font-size: 30px;
+    line-height: 40px;
+    margin: 0 0 20px 0;
+    font-family: 'AvertaCY-Black';
+  }
+  .block-form__form {
+    background: #fff;
+    border-radius: 0;
+    padding: 0;
+    box-shadow: none;
+    margin: 25px 0 0;
+    p.politics {
+      margin: 30px auto 0;
+      a {
+        font-size: 14px;
+        line-height: 20px;
+        color: #919AA1;
+        text-decoration: none;
+        transition: all 400ms ease-in-out;
+        &:hover {
+          color: #3285e4;
+          text-decoration: none;
+          transition: all 400ms ease-in-out;
+        }
+      }
+    }
+  }
+  &__text {
+    p.info {
+      margin-bottom: 25px;
+      padding: 20px;
+      border-radius: 10px;
+      background-color: #f4f8fa;
+      font-family: 'AvertaCY-Bold';
+      font-size: 17px;
+    }
+    h5 {
+      line-height: 34px;
+      font-size: 24px;
+    }
+    h6 {
+      line-height: 26px;
+      font-size: 20px;
+      margin: 0 0 20px 0;
+      font-family: 'AvertaCY-Black';
+    }
+    ul {
+      display: block;
+      margin: 0;
+      padding: 0;
+      li {
+        position: relative;
+        padding: 0 0 0 20px;
+        margin: 0 0 25px 0;
+        font-size: 17px;
+        line-height: 24px;
+        color: #2D2D2D;
+        &::before {
+          content: '';
+          width: 6px;
+          height: 6px;
+          border-radius: 50%;
+          position: absolute;
+          top: 11px;
+          left: 0;
+          background: #2D2D2D;
+        }
+      }
+    }
+  }
+}
+
+.swiper-prev {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 50%;
+  background: transparent;
+  cursor: url(../images/arrow2.png), pointer;
+}
+.swiper-buttons {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 5;
+}
+.swiper-next {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 50%;
+  background: transparent;
+  cursor: url(../images/arrow1.png), pointer;
+}
+
 @media (min-width: 1400px) {
   .container {
     max-width: 1030px;
@@ -1326,9 +1467,25 @@ h3 {
   .work-block__image {
     margin: 0 20px;
   }
+  .footer {
+    max-width: 100%;
+  }
 }
 
 @media screen and (max-width: 991px) {
+  .conduct-image {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  .info-block__text {
+    top: 150px;
+  }
+  .work-stages__text {
+    top: 150px;
+  }
+  .work-stages__text .button {
+    margin-top: 0;
+  }
   h1 {
     font-size: 30px;
     line-height: 40px;
@@ -1440,9 +1597,15 @@ h3 {
 }
 
 @media screen and (max-width: 767px) {
+  .btn-close {
+    right: -30px;
+  }
   .banner {
     margin: 20px 0 60px;
     flex-direction: column;
+  }
+  .main-section {
+    overflow: hidden;
   }
   .banner-image {
     margin: 30px 0 0 0;
@@ -1501,6 +1664,15 @@ h3 {
 }
 
 @media screen and (max-width: 575px) {
+  .modal-body {
+    padding: 30px 20px;
+  }
+  .btn-close {
+    right: 10px;
+    background: #3285e4;
+    top: 10px;
+    z-index: 10;
+  }
   main {
     overflow: hidden;
   } 
@@ -1543,3 +1715,47 @@ h3 {
     margin: 0 15px;
   }
 }
+
+.animate__fadeInUpMini {
+  -webkit-animation-name: fadeInUpMini;
+  animation-name: fadeInUpMini
+}
+
+@keyframes fadeInUpMini {
+  0% {
+      opacity: 0;
+      -webkit-transform: translate3d(0,10%,0);
+      transform: translate3d(0,10%,0)
+  }
+  to {
+      opacity: 1;
+      -webkit-transform: translateZ(0);
+      transform: translateZ(0)
+  }
+}
+
+.animate__fadeInUp {
+  -webkit-animation-name: fadeInUp ;
+  animation-name: fadeInUp 
+}
+
+@keyframes fadeInUp  {
+  0% {
+      opacity: 0;
+      -webkit-transform: translate3d(0,40%,0);
+      transform: translate3d(0,40%,0)
+  }
+  to {
+      opacity: 1;
+      -webkit-transform: translateZ(0);
+      transform: translateZ(0)
+  }
+}
+
+.animate__zoomIn {
+  -webkit-animation-name: zoomIn;
+  animation-name: zoomIn
+}
+
+
+
