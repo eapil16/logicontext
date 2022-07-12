@@ -1674,7 +1674,7 @@ h3 {
   bottom: 0;
   width: 50%;
   background: transparent;
-  cursor: url(../images/arrow2.png), pointer;
+  cursor: url(../images/arrow-left.svg), pointer;
 }
 
 .swiper-buttons {
@@ -1693,7 +1693,7 @@ h3 {
   bottom: 0;
   width: 50%;
   background: transparent;
-  cursor: url(../images/arrow1.png), pointer;
+  cursor: url(../images/arrow-right.svg), pointer;
 }
 
 @media (min-width: 1400px) {
@@ -1849,6 +1849,9 @@ h3 {
 }
 
 @media screen and (max-width: 767px) {
+  .swiper-buttons {
+    display: none;
+  }
   .btn-close {
     right: -30px;
   }
